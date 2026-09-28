@@ -1,0 +1,14 @@
+origin_data/*
+!origin_data/SHA256SUMS.txt
+data/
+splits/
+results/
+figures/
+tables/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.log

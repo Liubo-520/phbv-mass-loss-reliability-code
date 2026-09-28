@@ -1,0 +1,31 @@
+# Core reproducible environment. Use requirements-lock.txt for the exact
+# successfully verified environment.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+scikit-learn>=1.3,<2
+openpyxl>=3.0.10,<4
+pyyaml>=6,<7
+joblib>=1.3,<2
+matplotlib>=3.7,<4
+seaborn>=0.13,<1
+pytest>=7.4,<9
+requests>=2.31,<3
+
+# Optional boosted-tree backends used only when available and stable.
+xgboost>=2,<4
+lightgbm>=4,<5
+catboost>=1.2,<2
+optuna>=3.2,<5
+
+# Interpretation, deployment, and artifact access.
+shap>=0.45,<1
+gradio>=5,<7
+huggingface-hub>=0.29,<2
+python-dotenv>=1,<2
+
+# Submission and browser-QA tooling.
+python-docx>=1.2,<2
+pypandoc_binary>=1.15,<2
+lxml>=5,<7
+selenium>=4.20,<5

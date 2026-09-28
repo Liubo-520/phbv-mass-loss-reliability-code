@@ -1,0 +1,23 @@
+project:
+  seed: 42
+  final_seeds: [42, 314, 2026]
+  n_jobs: -1
+
+paths:
+  raw_workbook: origin_data/Weight-loss-model-main/scl_weight_loss_data_library_raw_LM.xlsx
+  cleaned_csv: origin_data/Weight-loss-model-main/weight_loss_data_LM.csv
+  source_pdf: origin_data/Kotzabasaki 等 - 2026 - A Data-Driven Framework for Predicting PHBV Biodegradation-I.pdf
+
+splits:
+  random_test_size: 0.20
+  curve_folds: 5
+  primary: leave_one_study_out
+
+tuning:
+  enabled: true
+  trials: 12
+  inner_group_folds: 3
+
+uncertainty:
+  coverages: [0.80, 0.90, 0.95]
+
